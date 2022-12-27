@@ -1,0 +1,1 @@
+# alfred-new-iterm-window
