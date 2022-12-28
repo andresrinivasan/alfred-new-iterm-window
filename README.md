@@ -4,7 +4,7 @@ Start a new iTerm session from Alfred using the default profile or a selected pr
 
 ## Compatibility
 
-This workflow requires Alfred 5 and iTerm 2. iTerm must already be running.
+This workflow requires [Alfred 5](https://www.alfredapp.com/) and [iTerm 2](https://iterm2.com/). iTerm must already be running.
 
 ## Usage
 
