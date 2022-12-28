@@ -14,4 +14,4 @@ Hold `<OPTION>` while launching to have the iTerm session start in the last dire
 
 ## Credit
 
-This is a rewrite of [https://github.com/miromannino/alfred-new-terminal-window] using Python, the iTerm Python API, and Alfred 5 Automation.
+This is a rewrite of <https://github.com/miromannino/alfred-new-terminal-window> using Python, the iTerm Python API, and Alfred 5 Automation.
