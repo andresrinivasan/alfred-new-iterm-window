@@ -5,20 +5,29 @@ import json
 import iterm2
 
 
+async def get_most_profiles(c):
+    all = await iterm2.PartialProfile.async_query(c)
+    return [p for p in all if p.all_properties["Name"] != "Hotkey Window"]
+
+
 async def main(connection):
     print(
         json.dumps(
             {
                 "items": [
                     {
-                        "uid": p.all_properties["Guid"],
                         "title": "New iTerm Window",
                         "subtitle": p.all_properties["Name"],
                         "arg": p.all_properties["Name"],
                         "match": p.all_properties["Name"],
                         "autocomplete": p.all_properties["Name"],
+                        "mods": {
+                            "alt": {
+                                "subtitle": f"Start {p.all_properties['Name']} profile in last Finder directory"
+                            }
+                        },
                     }
-                    for p in await iterm2.PartialProfile.async_query(connection)
+                    for p in await get_most_profiles(connection)
                 ]
             }
         )
