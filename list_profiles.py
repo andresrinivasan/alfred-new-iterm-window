@@ -17,7 +17,7 @@ async def main(connection):
                 "items": [
                     {
                         "title": "New iTerm Window",
-                        "subtitle": p.all_properties["Name"],
+                        "subtitle": f"Start {p.all_properties['Name']}",
                         "arg": p.all_properties["Name"],
                         "match": p.all_properties["Name"],
                         "autocomplete": p.all_properties["Name"],
