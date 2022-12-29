@@ -17,13 +17,13 @@ async def main(connection):
                 "items": [
                     {
                         "title": "New iTerm Window",
-                        "subtitle": f"Start {p.all_properties['Name']}",
+                        "subtitle": f"Use {p.all_properties['Name']} profile",
                         "arg": p.all_properties["Name"],
                         "match": p.all_properties["Name"],
                         "autocomplete": p.all_properties["Name"],
                         "mods": {
                             "alt": {
-                                "subtitle": f"Start {p.all_properties['Name']} profile in last Finder directory"
+                                "subtitle": f"Use {p.all_properties['Name']} profile in last Finder directory"
                             }
                         },
                     }
